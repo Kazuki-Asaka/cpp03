@@ -14,7 +14,8 @@ ScavTrap::ScavTrap(const ScavTrap& rhs) {
 }
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& rhs) {
-	*this = rhs;
+	
+	ClapTrap::operator=(rhs);
 	return(*this);
 }
 

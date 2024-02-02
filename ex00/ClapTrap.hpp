@@ -17,7 +17,7 @@ private:
 	std::string name;
 	unsigned int hit_point;
 	unsigned int energy_point;
-	unsigned int attack_point;
+	unsigned int attack_damage;
 };
 
 #endif

@@ -13,6 +13,11 @@ ScavTrap::ScavTrap(const ScavTrap& rhs) {
 	*this = rhs;
 }
 
+ScavTrap& ScavTrap::operator=(const ScavTrap& rhs) {
+	*this = rhs;
+	return(*this);
+}
+
 ScavTrap::~ScavTrap() {
 	std::cout << "ScavTrap Destructor called" << std::endl;
 }
@@ -23,7 +28,11 @@ void ScavTrap::attack(const std::string target) {
 	else if (this -> hit_point <= 0) 
 		std::cout << this -> name << "is dead. " << this -> name << " has " << this -> hit_point << " points of hit "<< std::endl;
 	else {
-		std::cout << "ClapTrap " << this -> name << " attacks " << target <<", causing " << this -> attack_damage << " points of damage!" << std::endl;
+		std::cout << "ScavTrap " << this -> name << " attacks " << target <<", causing " << this -> attack_damage << " points of damage!" << std::endl;
 		this -> energy_point = this -> energy_point - 1;
 	}
+}
+
+void ScavTrap::guardGate() {
+	std::cout << "ScavTrap is now in Gate keeper mode" << std::endl;
 }

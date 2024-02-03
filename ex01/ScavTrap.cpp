@@ -14,8 +14,8 @@ ScavTrap::ScavTrap(const ScavTrap& rhs) {
 }
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& rhs) {
-	
 	ClapTrap::operator=(rhs);
+	std::cout << "ScavTrap Copy assignment called" << std::endl;
 	return(*this);
 }
 

@@ -18,6 +18,9 @@ protected:
 	unsigned int hit_point;
 	unsigned int energy_point;
 	unsigned int attack_damage;
+	const static unsigned int clap_hit = 10;
+	const static unsigned int clap_energy = 10;
+	const static unsigned int clap_damage = 0;
 };
 
 #endif

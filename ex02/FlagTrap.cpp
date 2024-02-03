@@ -2,10 +2,16 @@
 
 FlagTrap::FlagTrap() : ClapTrap() {
 	std::cout << "FlagTrap Default constructor called" << std::endl;
+	this -> hit_point = 100;
+	this -> energy_point = 100;
+	this -> attack_damage = 30;
 }
 
 FlagTrap::FlagTrap(std::string name) : ClapTrap(name) {
 	std::cout << "FlagTrap Name constructor called" << std::endl;
+	this -> hit_point = 100;
+	this -> energy_point = 100;
+	this -> attack_damage = 30;
 }
 
 FlagTrap::FlagTrap(const FlagTrap& rhs) {

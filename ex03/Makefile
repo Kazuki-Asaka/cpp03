@@ -1,6 +1,8 @@
 SRCS	=	ClapTrap.cpp\
 			main.cpp\
-			ScavTrap.cpp
+			ScavTrap.cpp\
+			FlagTrap.cpp\
+			DiamondTrap.cpp\
 
 OBJS	=	$(SRCS:.cpp=.o)
 
@@ -9,7 +11,7 @@ CXX		= c++
 CXXFLAGS	= -std=c++98
 CXXFLAGS 	+= -Wall -Wextra -Werror
 
-NAME	= ex01
+NAME	= ex03
 
 all:	$(NAME)
 
